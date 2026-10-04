@@ -1,0 +1,12 @@
+plugins { id 'fabric-loom' version '1.10-SNAPSHOT' }
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.1'
+    mappings 'net.fabricmc:yarn:1.21.1+build.3:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.16.9'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.107.0+1.21.1'
+    modCompileOnly('net.impactdev.impactor.api:economy:5.3.5') {
+        exclude group: 'net.kyori', module: 'event-api'
+    }
+    implementation 'org.xerial:sqlite-jdbc:3.50.3.0'
+    include 'org.xerial:sqlite-jdbc:3.50.3.0'
+}

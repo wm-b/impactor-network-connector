@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "id": "impactor_network_source",
+  "version": "0.1.0",
+  "name": "Impactor Network Connector Source",
+  "environment": "server",
+  "entrypoints": {"main": ["dev.impactor.network.source.SourceMod"]},
+  "depends": {"fabricloader": ">=0.16.9", "minecraft": "1.21.1", "java": ">=21", "impactor": "*"}
+}

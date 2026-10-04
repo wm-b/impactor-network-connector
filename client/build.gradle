@@ -1,0 +1,10 @@
+plugins { id 'com.gradleup.shadow' version '8.3.6' }
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT'
+    implementation 'org.xerial:sqlite-jdbc:3.50.3.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+}
+tasks.named('test') { useJUnitPlatform() }
+tasks.named('shadowJar') { archiveClassifier = '' }
+tasks.named('jar') { archiveClassifier = 'plain' }
+tasks.named('build') { dependsOn tasks.named('shadowJar') }

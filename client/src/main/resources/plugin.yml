@@ -1,0 +1,10 @@
+name: ImpactorNetworkClient
+version: 0.1.0
+main: dev.impactor.network.client.ClientPlugin
+api-version: '1.21'
+commands:
+  currency:
+    permission: impactor.currency.admin
+permissions:
+  impactor.currency.admin:
+    default: op

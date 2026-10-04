@@ -1,0 +1,6 @@
+.gradle/
+**/build/
+.research-impactor/
+*.hprof
+.idea/
+*.iml
